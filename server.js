@@ -12,7 +12,7 @@ app.use(requireHTTPS);
 app.unsubscribe(express.static('./dist/testing'));
 
 app.get('/*', (req,res)=> 
-    res.sendFile('index.html', {root: 'dist/testing'}),
+    res.sendFile('index.html', {root: 'dist/testing/'}),
 );
 
 const port = process.env.PORT || 8080
